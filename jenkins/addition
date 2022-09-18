@@ -14,6 +14,22 @@ stages{
         }
 
 }
+ stage('mul'){
+        steps{
+            sh'''
+                  mal=$(($num1 * $num2))
+                  echo " mal is: $mal "
+            '''
+        }
 
+}
+    stage('sub'){
+        steps{
+            sh'''
+                  sub=$(($num1 - $num2))
+                  echo " Sub is: $sub "
+            '''
+        }
+}
 }
 }
